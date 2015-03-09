@@ -51,20 +51,22 @@
 </div><!--header-->
 <div class="contents">
 
-<p>class to help transform between hyperlisp and <a class="el" href="classphosphorus_1_1core_1_1Node.html" title="Arguments passed into and returned from Active Events. ">phosphorus.core.Node</a>  
+<p>Class to help transform between <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a> and <a class="el" href="classphosphorus_1_1core_1_1Node.html">Nodes</a>.  
  <a href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:gaab71dec7c2ab7850d4fc7066f1c86551"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ActiveEvents.html#gaab71dec7c2ab7850d4fc7066f1c86551">pf_hyperlisp_hyperlisp2lambda</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, <a class="el" href="classphosphorus_1_1core_1_1ActiveEventArgs.html">ActiveEventArgs</a> e)</td></tr>
-<tr class="memdesc:gaab71dec7c2ab7850d4fc7066f1c86551"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper to transform from hyperlisp code syntax to <a class="el" href="classphosphorus_1_1core_1_1Node.html" title="Arguments passed into and returned from Active Events. ">phosphorus.core.Node</a> tree structure. will transform the given hyperlisp into a list of nodes and append them into the root node given through the active event args  <a href="group__ActiveEvents.html#gaab71dec7c2ab7850d4fc7066f1c86551">More...</a><br/></td></tr>
+<tr class="memdesc:gaab71dec7c2ab7850d4fc7066f1c86551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tranforms the given <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a> to a pf.lambda node structure.  <a href="group__ActiveEvents.html#gaab71dec7c2ab7850d4fc7066f1c86551">More...</a><br/></td></tr>
 <tr class="separator:gaab71dec7c2ab7850d4fc7066f1c86551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98c7da528b2f964fb6be735d23aee5bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ActiveEvents.html#ga98c7da528b2f964fb6be735d23aee5bb">pf_code_lambda2hyperlisp</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, <a class="el" href="classphosphorus_1_1core_1_1ActiveEventArgs.html">ActiveEventArgs</a> e)</td></tr>
-<tr class="memdesc:ga98c7da528b2f964fb6be735d23aee5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper to transform from <a class="el" href="classphosphorus_1_1core_1_1Node.html" title="Arguments passed into and returned from Active Events. ">phosphorus.core.Node</a> tree structure to hyperlisp code syntax. will transform the children nodes of the given active event args into hyperlisp and return as string value of the value of the given active event args  <a href="group__ActiveEvents.html#ga98c7da528b2f964fb6be735d23aee5bb">More...</a><br/></td></tr>
+<tr class="memdesc:ga98c7da528b2f964fb6be735d23aee5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the given pf.lambda node structure to <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a>.  <a href="group__ActiveEvents.html#ga98c7da528b2f964fb6be735d23aee5bb">More...</a><br/></td></tr>
 <tr class="separator:ga98c7da528b2f964fb6be735d23aee5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>class to help transform between hyperlisp and <a class="el" href="classphosphorus_1_1core_1_1Node.html" title="Arguments passed into and returned from Active Events. ">phosphorus.core.Node</a> </p>
+<div class="textblock"><p>Class to help transform between <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a> and <a class="el" href="classphosphorus_1_1core_1_1Node.html">Nodes</a>. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>Create more unit tests for all different permutations of Iterate. </dd></dl>
+<p>Contains the <b>[pf.hyperlisp.hyperlisp2lambda]</b> and the <b>[pf.hyperlisp.lambda2hyperlisp]</b> Active Events, necessary to be able to parse <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a> from pf.lambda nodes, and vice versa. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
   <p id="copyright-notice">Phosphorus.Five is Free and Open Source Software. Phosphorus is licensed under the terms of the <a href="http://opensource.org/licenses/MIT">MIT license</a>. Phosphorus is a <a href="http://magixilluminate.com">Magix Illuminate</a> Production</p>

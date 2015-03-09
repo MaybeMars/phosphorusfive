@@ -46,6 +46,9 @@
 <div class="title">Package phosphorus.file.file</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Main namespace for all <b>[pf.file.xxx]</b> Active Events.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -62,7 +65,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to help save files.  <a href="classphosphorus_1_1file_1_1file_1_1Save.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Main namespace for all <b>[pf.file.xxx]</b> Active Events. </p>
+<p>Contains all Active Events within the <b>[pf.file.xxx]</b> namespace, allowing for creation, deletion, and manipulation of files, on your local file system.</p>
+<p>All of these Active Events can take <a class="el" href="classphosphorus_1_1expressions_1_1Expression.html">Expressions</a> as their values. This means you can for instance load, remove or save multiple files at the same time, with one single Active Event invocation.</p>
+<p>These Active Events also returns a node hierarchy, containing the file/folder names as the name of the nodes, and whatever result the Active Event returns beneath that node. This is because since these Active Events can take multiple arguments, through expressions, they must be able to return values, relative to their specifically handled argument. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
   <p id="copyright-notice">Phosphorus.Five is Free and Open Source Software. Phosphorus is licensed under the terms of the <a href="http://opensource.org/licenses/MIT">MIT license</a>. Phosphorus is a <a href="http://magixilluminate.com">Magix Illuminate</a> Production</p>
 </body>

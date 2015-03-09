@@ -44,7 +44,6 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="classphosphorus_1_1lambda_1_1events_1_1EventsCommon-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -52,220 +51,30 @@
 </div><!--header-->
 <div class="contents">
 
-<p>contains common stuff for global events and global overrides, created using the [event] keyword and the [override] keyword  
+<p>Common helper methods for dynamically created Active Events.  
  <a href="classphosphorus_1_1lambda_1_1events_1_1EventsCommon.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a753d056685158d10fe9d678663f514ac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1lambda_1_1events_1_1EventsCommon.html#a753d056685158d10fe9d678663f514ac">CreateEvent</a> (string name, IEnumerable&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt; lambdas)</td></tr>
-<tr class="memdesc:a753d056685158d10fe9d678663f514ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a dynamic Active <a class="el" href="classphosphorus_1_1lambda_1_1events_1_1Event.html" title="class wrapping [event] keyword ">Event</a>  <a href="#a753d056685158d10fe9d678663f514ac">More...</a><br/></td></tr>
-<tr class="separator:a753d056685158d10fe9d678663f514ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee9f704de4e195873c17acec5b895e3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1lambda_1_1events_1_1EventsCommon.html#a7ee9f704de4e195873c17acec5b895e3">RemoveEvent</a> (string name)</td></tr>
-<tr class="memdesc:a7ee9f704de4e195873c17acec5b895e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes all dynamically Active Events created with the [event] keyword with the given name  <a href="#a7ee9f704de4e195873c17acec5b895e3">More...</a><br/></td></tr>
-<tr class="separator:a7ee9f704de4e195873c17acec5b895e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc04de7a3f4345c9d335f12029fc64b5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1lambda_1_1events_1_1EventsCommon.html#adc04de7a3f4345c9d335f12029fc64b5">RemoveOverride</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, string baseEvent, string superEvent)</td></tr>
-<tr class="memdesc:adc04de7a3f4345c9d335f12029fc64b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes given override  <a href="#adc04de7a3f4345c9d335f12029fc64b5">More...</a><br/></td></tr>
-<tr class="separator:adc04de7a3f4345c9d335f12029fc64b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed75b20a0787c9191e4ad19823a3ba8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1lambda_1_1events_1_1EventsCommon.html#abed75b20a0787c9191e4ad19823a3ba8">CreateOverride</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, string baseEvent, string superEvent)</td></tr>
-<tr class="memdesc:abed75b20a0787c9191e4ad19823a3ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates an override from baseEvent to superEvent  <a href="#abed75b20a0787c9191e4ad19823a3ba8">More...</a><br/></td></tr>
-<tr class="separator:abed75b20a0787c9191e4ad19823a3ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:gadbcef8a70f8ff3ab59adbe888bc17680"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ActiveEvents.html#gadbcef8a70f8ff3ab59adbe888bc17680">pf_meta_event_get</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, <a class="el" href="classphosphorus_1_1core_1_1ActiveEventArgs.html">ActiveEventArgs</a> e)</td></tr>
-<tr class="memdesc:gadbcef8a70f8ff3ab59adbe888bc17680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves one or more dynamically created Active Events, and their pf.lambda code.  <a href="group__ActiveEvents.html#gadbcef8a70f8ff3ab59adbe888bc17680">More...</a><br/></td></tr>
+<tr class="memdesc:gadbcef8a70f8ff3ab59adbe888bc17680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves one or more dynamically created Active Events.  <a href="group__ActiveEvents.html#gadbcef8a70f8ff3ab59adbe888bc17680">More...</a><br/></td></tr>
 <tr class="separator:gadbcef8a70f8ff3ab59adbe888bc17680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga571aea0e697feb885b8901ecb0fa9005"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ActiveEvents.html#ga571aea0e697feb885b8901ecb0fa9005">pf_meta_event_list</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, <a class="el" href="classphosphorus_1_1core_1_1ActiveEventArgs.html">ActiveEventArgs</a> e)</td></tr>
-<tr class="memdesc:ga571aea0e697feb885b8901ecb0fa9005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists all dynamically create Active Events  <a href="group__ActiveEvents.html#ga571aea0e697feb885b8901ecb0fa9005">More...</a><br/></td></tr>
+<tr class="memdesc:ga571aea0e697feb885b8901ecb0fa9005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists all dynamically created Active Events.  <a href="group__ActiveEvents.html#ga571aea0e697feb885b8901ecb0fa9005">More...</a><br/></td></tr>
 <tr class="separator:ga571aea0e697feb885b8901ecb0fa9005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6ebc1f29172286c63f732b121179312"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac6ebc1f29172286c63f732b121179312"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ActiveEvents.html#gac6ebc1f29172286c63f732b121179312">pf_core_initialize_application_context</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, <a class="el" href="classphosphorus_1_1core_1_1ActiveEventArgs.html">ActiveEventArgs</a> e)</td></tr>
-<tr class="memdesc:gac6ebc1f29172286c63f732b121179312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active <a class="el" href="classphosphorus_1_1lambda_1_1events_1_1Event.html" title="class wrapping [event] keyword ">Event</a>: "<b>pf.core.initialize-application-context</b>". <br/></td></tr>
+<tr class="memdesc:gac6ebc1f29172286c63f732b121179312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active <a class="el" href="classphosphorus_1_1lambda_1_1events_1_1Event.html" title="Class wrapping [event] Active Event. ">Event</a>: "<b>pf.core.initialize-application-context</b>". <br/></td></tr>
 <tr class="separator:gac6ebc1f29172286c63f732b121179312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab86bd513886a827e2477276783bbd8e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab86bd513886a827e2477276783bbd8e8"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ActiveEvents.html#gab86bd513886a827e2477276783bbd8e8">_pf_core_null_active_event</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, <a class="el" href="classphosphorus_1_1core_1_1ActiveEventArgs.html">ActiveEventArgs</a> e)</td></tr>
-<tr class="memdesc:gab86bd513886a827e2477276783bbd8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active <a class="el" href="classphosphorus_1_1lambda_1_1events_1_1Event.html" title="class wrapping [event] keyword ">Event</a>: "<b></b>". <br/></td></tr>
+<tr class="memdesc:gab86bd513886a827e2477276783bbd8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active <a class="el" href="classphosphorus_1_1lambda_1_1events_1_1Event.html" title="Class wrapping [event] Active Event. ">Event</a>: "<b></b>". <br/></td></tr>
 <tr class="separator:gab86bd513886a827e2477276783bbd8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>contains common stuff for global events and global overrides, created using the [event] keyword and the [override] keyword </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a753d056685158d10fe9d678663f514ac"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void phosphorus.lambda.events.EventsCommon.CreateEvent </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">IEnumerable&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt;&#160;</td>
-          <td class="paramname"><em>lambdas</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>creates a dynamic Active <a class="el" href="classphosphorus_1_1lambda_1_1events_1_1Event.html" title="class wrapping [event] keyword ">Event</a> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>name of Active <a class="el" href="classphosphorus_1_1lambda_1_1events_1_1Event.html" title="class wrapping [event] keyword ">Event</a></td></tr>
-    <tr><td class="paramname">lambdas</td><td>lambda objects</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="abed75b20a0787c9191e4ad19823a3ba8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void phosphorus.lambda.events.EventsCommon.CreateOverride </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a>&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>baseEvent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>superEvent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>creates an override from baseEvent to superEvent </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>application context</td></tr>
-    <tr><td class="paramname">baseEvent</td><td>event to override</td></tr>
-    <tr><td class="paramname">superEvent</td><td>event supposed to override baseEvent</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a7ee9f704de4e195873c17acec5b895e3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void phosphorus.lambda.events.EventsCommon.RemoveEvent </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>removes all dynamically Active Events created with the [event] keyword with the given name </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>name of Active Event(s) to delete</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="adc04de7a3f4345c9d335f12029fc64b5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void phosphorus.lambda.events.EventsCommon.RemoveOverride </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a>&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>baseEvent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>superEvent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>deletes given override </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>application context</td></tr>
-    <tr><td class="paramname">baseEvent</td><td>name of base (overridden) event</td></tr>
-    <tr><td class="paramname">superEvent</td><td>name of super (overriding) event</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Common helper methods for dynamically created Active Events. </p>
+<p>Contains helper methods for creating and manipulating dynamically created Active Events. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
   <p id="copyright-notice">Phosphorus.Five is Free and Open Source Software. Phosphorus is licensed under the terms of the <a href="http://opensource.org/licenses/MIT">MIT license</a>. Phosphorus is a <a href="http://magixilluminate.com">Magix Illuminate</a> Production</p>
 </body>

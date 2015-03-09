@@ -46,103 +46,110 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">phosphorus.lambda.keywords.helpers.Conditions Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>class wrapping any statement, that somehow yields a condition, such as "pf.if", and "pf.while"  
+<p>Class wrapping conditional statements.  
  <a href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a546168ac3f1979eb2da8f63d1d193b86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a546168ac3f1979eb2da8f63d1d193b86">Conditions</a> (<a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> statementNode, <a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context)</td></tr>
-<tr class="memdesc:a546168ac3f1979eb2da8f63d1d193b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes a new instance of the condition class  <a href="#a546168ac3f1979eb2da8f63d1d193b86">More...</a><br/></td></tr>
+<tr class="memdesc:a546168ac3f1979eb2da8f63d1d193b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the condition class.  <a href="#a546168ac3f1979eb2da8f63d1d193b86">More...</a><br/></td></tr>
 <tr class="separator:a546168ac3f1979eb2da8f63d1d193b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa61c082944eda0cd26a3c71220c8c472"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#aa61c082944eda0cd26a3c71220c8c472">Evaluate</a> ()</td></tr>
-<tr class="memdesc:aa61c082944eda0cd26a3c71220c8c472"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if statement evaluates to true  <a href="#aa61c082944eda0cd26a3c71220c8c472">More...</a><br/></td></tr>
+<tr class="memdesc:aa61c082944eda0cd26a3c71220c8c472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates Condition, and returns result.  <a href="#aa61c082944eda0cd26a3c71220c8c472">More...</a><br/></td></tr>
 <tr class="separator:aa61c082944eda0cd26a3c71220c8c472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a0de5a44ab3fb38ac95da929278755dc6"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a0de5a44ab3fb38ac95da929278755dc6">ExecutionLambdas</a><code> [get]</code></td></tr>
-<tr class="memdesc:a0de5a44ab3fb38ac95da929278755dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns all execution lambda objects beneath the statement to execute if statement evaluates to true  <a href="#a0de5a44ab3fb38ac95da929278755dc6">More...</a><br/></td></tr>
+<tr class="memdesc:a0de5a44ab3fb38ac95da929278755dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns lambda objects to execute if condition yields true.  <a href="#a0de5a44ab3fb38ac95da929278755dc6">More...</a><br/></td></tr>
 <tr class="separator:a0de5a44ab3fb38ac95da929278755dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae91e6169728631a60d0628b28d2611ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#ae91e6169728631a60d0628b28d2611ff">IsSimpleExist</a><code> [get]</code></td></tr>
-<tr class="memdesc:ae91e6169728631a60d0628b28d2611ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if this is a simple "exists" Condition, meaning it has only one expression or constant being evaluated, and nothing to evaluate it against, and no children nodes of type [lambda.xxx]  <a href="#ae91e6169728631a60d0628b28d2611ff">More...</a><br/></td></tr>
+<tr class="memdesc:ae91e6169728631a60d0628b28d2611ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if value "exists".  <a href="#ae91e6169728631a60d0628b28d2611ff">More...</a><br/></td></tr>
 <tr class="separator:ae91e6169728631a60d0628b28d2611ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a76bedcca5731ab0a1c5ccd691c02b2b4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4">Operator</a> { <br/>
-&#160;&#160;<a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4a0ccb67e7eaae09d9e4078d161eeca100">Operator.Equals</a>, 
-<a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4a34b5af77cc5bf3a5f2a999f11f578255">Operator.NotEquals</a>, 
-<a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4a5f773e869559842a5d9132a913a4a976">Operator.MoreThan</a>, 
-<a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4ac6d9d7bb9939f62f01c80f8b1251501c">Operator.LessThan</a>, 
-<br/>
-&#160;&#160;<a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4a9460ad3d10ccbb816cfa5831a86e108b">Operator.MoreThanEquals</a>, 
-<a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4a06d4c6be3bd9e50b7634b6f20d696a4c">Operator.LessThanEquals</a>, 
-<a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4aa74c05d080620f087c4e523977230666">Operator.Not</a>, 
-<a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4add7f7c3323353f547eb98a8efba37ed0">Operator.Exist</a>
-<br/>
- }</td></tr>
-<tr class="memdesc:a76bedcca5731ab0a1c5ccd691c02b2b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the different types of legal conditions you can create  <a href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4">More...</a><br/></td></tr>
-<tr class="separator:a76bedcca5731ab0a1c5ccd691c02b2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>class wrapping any statement, that somehow yields a condition, such as "pf.if", and "pf.while" </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a76bedcca5731ab0a1c5ccd691c02b2b4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1helpers_1_1Conditions.html#a76bedcca5731ab0a1c5ccd691c02b2b4">phosphorus.lambda.keywords.helpers.Conditions.Operator</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>the different types of legal conditions you can create </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a76bedcca5731ab0a1c5ccd691c02b2b4a0ccb67e7eaae09d9e4078d161eeca100"></a>Equals</em>&#160;</td><td class="fielddoc">
-<p>equality, token '=' </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a76bedcca5731ab0a1c5ccd691c02b2b4a34b5af77cc5bf3a5f2a999f11f578255"></a>NotEquals</em>&#160;</td><td class="fielddoc">
-<p>inequality, token '!=' </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a76bedcca5731ab0a1c5ccd691c02b2b4a5f773e869559842a5d9132a913a4a976"></a>MoreThan</em>&#160;</td><td class="fielddoc">
-<p>more than, token '&gt;' </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a76bedcca5731ab0a1c5ccd691c02b2b4ac6d9d7bb9939f62f01c80f8b1251501c"></a>LessThan</em>&#160;</td><td class="fielddoc">
-<p>less than, token '&lt;' </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a76bedcca5731ab0a1c5ccd691c02b2b4a9460ad3d10ccbb816cfa5831a86e108b"></a>MoreThanEquals</em>&#160;</td><td class="fielddoc">
-<p>more than or equals, token '&gt;=' </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a76bedcca5731ab0a1c5ccd691c02b2b4a06d4c6be3bd9e50b7634b6f20d696a4c"></a>LessThanEquals</em>&#160;</td><td class="fielddoc">
-<p>less than or equals, token 'lt;=' </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a76bedcca5731ab0a1c5ccd691c02b2b4aa74c05d080620f087c4e523977230666"></a>Not</em>&#160;</td><td class="fielddoc">
-<p>not, meaning "does not exist". checks if an expression returns anything, and if it does, Not evaluates to false. opposite of Exist, token '!', but token is in "front" of epxression or constant, meaning it changes position with the expression or constant you wish to "not evaluate" </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a76bedcca5731ab0a1c5ccd691c02b2b4add7f7c3323353f547eb98a8efba37ed0"></a>Exist</em>&#160;</td><td class="fielddoc">
-<p>checks if an expression returns anything, and if it does, Exist evaluates to true. opposite of "Not". has no token, but is the default logical operator being used, if no operator is given </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>Class wrapping conditional statements. </p>
+<p>This class is used in for instance <b>[while]</b>, <b>[if]</b> and <b>[else-if]</b>, and wraps the conditions used to figure out if statement yields true or not.</p>
+<p>There exists 8 basic types of conditions, and they're all defined through their <em>"operators"<em>, or lack of operator. These 8 types of conditions are;</em></em></p>
+<p><em><em></p>
+<ol type="1">
+<li>= is the equals operator.</li>
+<li>!= is the not-equals operator.</li>
+<li>&gt; is the more-than operator.</li>
+<li>&lt; is the less-than operator.</li>
+<li>&gt;= is the more-than-or-equals operator.</li>
+<li>&lt;= is the less-than-or-equals operator.</li>
+<li>! is the not operator.</li>
+<li>Exists, has no operator, and is the default condition, if no operator exists.</li>
+</ol>
+<p></em></em></p>
+<p><em><em> A condition is normally created through some Active Event reference, such as the <b>[if]</b> Active Event, for then to have a value being checked, using <a class="el" href="classphosphorus_1_1expressions_1_1Expression.html">Expressions</a>, according to its condition in its main node. For instance, to check if a node exists, you might do something like this;</em></em></p>
+<p><em><em> </p>
+<pre>if:@/../5?node</pre><p></em></em></p>
+<p><em><em> The above example will create an exists condition, and yield true if there are 6 or more nodes beneath the root node of your tree, since it is checking for the existence of your 5th node, which is really your 6th of course. Below is an example of how to check if a value of one node equals the constant of "foo";</em></em></p>
+<p><em><em> </p>
+<pre>if:@/../0?value
+  =:foo
+  lambda
+    do-something-here</pre><p></em></em></p>
+<p><em><em> The last example above, shows a crucial point, which is that if your condition is a complex compound condition, and not a simple exists condition, then you have to create a <b>[lambda.xxx]</b> node beneath it, where you put your pf.lambda code to be executed if condition yields true. If your condition is a simple exists condition, you do not need to create a <b>[lambda.xxx]</b> child for your condition, since then by default, everything beneath your condition node will be executed using the <b>[lambda]</b> Active Event.</em></em></p>
+<p><em><em> You can also nest conditions, and create and and/or or conditions, which are to be checked in addition to your rot condition. For instance, to check if a node has a specific name, and a specific value, you might do something like this;</em></em></p>
+<p><em><em> </p>
+<pre>if:@/../0?name
+  =:foo
+  and:@/../0?value
+    =:bar
+  lambda
+    do-stuff</pre><p></em></em></p>
+<p><em><em> You can also create the equivalent of what you'd normally use parenthesis for when creating conditional statements in traditional programming languages, by grouping your conditions inside of each other. The next example would for instance yield true, and execute its child <b>[lambda]</b> node, even though the <b>[and]</b> condition yields false. This is because the first <b>[or]</b> child of our <b>[if]</b> node will evaluated to true, in addition to its inner <b>[and]</b> condition.</em></em></p>
+<p><em><em> </p>
+<pre>_foo:bar
+  foo:bar
+if:@/-?name
+  =:_foo
+  and:@/./-?value
+    =:foo
+  or:@/./-?value
+    =:bar
+    and:@/././-?name
+      =:_foo
+      or:@/./././-?name
+        =:_foo2
+        and:@/././././-/0?value
+  lambda
+    do-stuff</pre><p></em></em></p>
+<p><em><em> If you change the name of the <b>[_foo]</b> node to <b>[_foo2]</b>, the condition will still yield true, but then it will have to check the deepest levels of is parts, and won't yield true, before entering the last <b>[or]</b> statement, which in itself has a nested <b>[and]</b>. If you change the name of <b>[_foo]</b> to <b>[_foo2]</b>, in addition to removing the <b>[foo]</b> node, who's value is bar, then your condition will not yield true, because then your last <em>"exists condition"</em> will not yield true, which is a pre-requisite for your last <b>[or]</b> to be true.</em></em></p>
+<p><em><em> BTW, for the record; The above piece of code, is a ridiculously complex conditional statement, and something you'd very rarely, if ever, actually encounter. Partially because in pf.lambda, you can largely avoid conditions completely, due to pf.lambda's richness in its pf.lambda expressions, which will often completely eliminate the need for conditional statements.</em></em></p>
+<p><em><em> You can also of course compare the results of two expressions against each other, such as for instance;</em></em></p>
+<p><em><em> </p>
+<pre>_source1
+  foo1:su
+  foo2:cc
+  foo3:ess
+_source2:success
+if:@/-?value
+  =:@/./-2/"*"?value
+  lambda
+    do-stuff</pre><p></em></em></p>
+<p><em><em> In the above condition, the first expression will create a single result out of all the values of the children of the <b>[_source1]</b> node, for then to compare that single result against the result of the second expression, which returns the value of <b>[_source2]</b>. Since they both yield <em>"success"</em>, the condition will evaluate to true, and pf.lambda code inside the <b>[lambda]</b> node will be executed.</em></em></p>
+<p><em><em> Instead of using <b>[lambda]</b>, you can also use any other <b>[lambda.xxx]</b> Active Events you wish, as the nodes to be executed when your expressions yields true. You can also use <b>[lambda.copy]</b>, <b>[lambda.immutable]</b>, <b>[lambda.single]</b>, or for that matter <b>[lambda.fork]</b> if you wish. Any Active Event starting with the text <em>"lambda"</em>, can be used as the conditional pf.lambda code to execute upon success of evaluation of your conditions. For instance, consider this code, evaluating two integers, to see if one of them is larger than the other, and if so, invokes a <b>[lambda.single]</b> statement.</em></em></p>
+<p><em><em> </p>
+<pre>_exe
+  set:@/.?value
+    source:success
+_src1:int:5
+_src2:int:6
+if:@/-?value
+  &gt;:@/./-2?value
+  lambda.single:@/./-3/"*"/?node</pre><p> </em></em></p>
+<p><em><em> </em></em></p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a546168ac3f1979eb2da8f63d1d193b86"></a>
 <div class="memitem">
 <div class="memproto">
@@ -175,11 +182,11 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>initializes a new instance of the condition class </p>
+<p>Initializes a new instance of the condition class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">statementNode</td><td>the node of the conditional statement</td></tr>
-    <tr><td class="paramname">context</td><td>application context</td></tr>
+    <tr><td class="paramname">statementNode</td><td>The node of the conditional statement.</td></tr>
+    <tr><td class="paramname">context</td><td>Application context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -208,7 +215,8 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>returns true if statement evaluates to true </p>
+<p>Evaluates Condition, and returns result. </p>
+<p>Will return true if Condition is true, otherwise false. </p>
 
 </div>
 </div>
@@ -231,8 +239,9 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>returns all execution lambda objects beneath the statement to execute if statement evaluates to true </p>
-<p>The execution lambdas.</p>
+<p>Returns lambda objects to execute if condition yields true. </p>
+<p>Returns all execution lambda objects beneath the statement to execute if statement evaluates to true. </p>
+<p>The pf.lambdas nodes to execute if statement yields true.</p>
 
 </div>
 </div>
@@ -254,8 +263,10 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>returns true if this is a simple "exists" Condition, meaning it has only one expression or constant being evaluated, and nothing to evaluate it against, and no children nodes of type [lambda.xxx] </p>
-<p><code>true</code> if this instance is simple exist; otherwise, <code>false</code></p>
+<p>Returns true if value "exists". </p>
+<p>Returns true if this is a simple "exists" Condition, meaning it has only one expression, or constant being evaluated, and nothing to evaluate it against, and no children nodes of type <b>[lambda.xxx]</b>.</p>
+<p>A condition can be "complex", meaning you compare one value against another value, or it can be a "simple exists check", meaning you simply check if some expression or constant yields "true". If it is a "simple exists check", then this will return true. </p>
+<p><code>true</code> if this instance is simple exist; otherwise, <code>false</code>.</p>
 
 </div>
 </div>

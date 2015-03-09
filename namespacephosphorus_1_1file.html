@@ -47,21 +47,32 @@
 <div class="title">Package phosphorus.file</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Main namespace for all file operations in Phosphorus.Five.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacephosphorus_1_1file_1_1file"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacephosphorus_1_1file_1_1file.html">file</a></td></tr>
+<tr class="memdesc:namespacephosphorus_1_1file_1_1file"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main namespace for all <b>[pf.file.xxx]</b> Active Events. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacephosphorus_1_1file_1_1folder"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacephosphorus_1_1file_1_1folder.html">folder</a></td></tr>
+<tr class="memdesc:namespacephosphorus_1_1file_1_1folder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main namespace for everything related to folders. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1file_1_1Common.html">Common</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class containing common methods for [pf.file.xxx] namespace  <a href="classphosphorus_1_1file_1_1Common.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class containing common methods for <b>[pf.file.xxx]</b> namespace  <a href="classphosphorus_1_1file_1_1Common.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Main namespace for all file operations in Phosphorus.Five. </p>
+<p>Contains all Active Events within the <b>[pf.file.xxx]</b> and <b>[pf.folder.xxx]</b> namespace.</p>
+<p>Notice that all of these Active Events can only check for files within the main folder of your application, and they will have the root folder of your application automatically appended, to their files and folder, as they execute.</p>
+<p>Due to the above reasons, it is therefor necessary for you to either expose an Active Event in your ApplicationContext returning this root folder, with the name of; <b>[pf.core.application-folder]</b></p>
+<p>This is automatically done for you though, if you use the main phosphorus.application-pool, or the lambda.exe console program as your main application context pool. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
   <p id="copyright-notice">Phosphorus.Five is Free and Open Source Software. Phosphorus is licensed under the terms of the <a href="http://opensource.org/licenses/MIT">MIT license</a>. Phosphorus is a <a href="http://magixilluminate.com">Magix Illuminate</a> Production</p>
 </body>

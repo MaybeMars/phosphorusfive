@@ -52,23 +52,24 @@
 </div><!--header-->
 <div class="contents">
 
-<p>class responsible for creating hyperlisp from a <a class="el" href="classphosphorus_1_1core_1_1Node.html" title="Arguments passed into and returned from Active Events. ">phosphorus.core.Node</a> list  
+<p>Class encapsulating internals of creation of <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a>.  
  <a href="classphosphorus_1_1hyperlisp_1_1helpers_1_1HyperlispBuilder.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a65aae8c03c91c2d55d38fe959070716e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1hyperlisp_1_1helpers_1_1HyperlispBuilder.html#a65aae8c03c91c2d55d38fe959070716e">HyperlispBuilder</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, IEnumerable&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt; nodes)</td></tr>
-<tr class="memdesc:a65aae8c03c91c2d55d38fe959070716e"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes a new instance of the <a class="el" href="classphosphorus_1_1hyperlisp_1_1helpers_1_1HyperlispBuilder.html" title="class responsible for creating hyperlisp from a phosphorus.core.Node list ">HyperlispBuilder</a> class  <a href="#a65aae8c03c91c2d55d38fe959070716e">More...</a><br/></td></tr>
+<tr class="memdesc:a65aae8c03c91c2d55d38fe959070716e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="classphosphorus_1_1hyperlisp_1_1helpers_1_1HyperlispBuilder.html" title="Class encapsulating internals of creation of Hyperlisp. ">HyperlispBuilder</a> class.  <a href="#a65aae8c03c91c2d55d38fe959070716e">More...</a><br/></td></tr>
 <tr class="separator:a65aae8c03c91c2d55d38fe959070716e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ad277e0dee239c293c0983b72a32f49bd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1hyperlisp_1_1helpers_1_1HyperlispBuilder.html#ad277e0dee239c293c0983b72a32f49bd">Hyperlisp</a><code> [get]</code></td></tr>
-<tr class="memdesc:ad277e0dee239c293c0983b72a32f49bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the hyperlisp  <a href="#ad277e0dee239c293c0983b72a32f49bd">More...</a><br/></td></tr>
+<tr class="memdesc:ad277e0dee239c293c0983b72a32f49bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses and retrieves the <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a>.  <a href="#ad277e0dee239c293c0983b72a32f49bd">More...</a><br/></td></tr>
 <tr class="separator:ad277e0dee239c293c0983b72a32f49bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>class responsible for creating hyperlisp from a <a class="el" href="classphosphorus_1_1core_1_1Node.html" title="Arguments passed into and returned from Active Events. ">phosphorus.core.Node</a> list </p>
+<div class="textblock"><p>Class encapsulating internals of creation of <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a>. </p>
+<p>Class containing actual implementation of logic behind the <b>[pf.hyperlisp.lambda2hyperlisp]</b> Active Event. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a65aae8c03c91c2d55d38fe959070716e"></a>
 <div class="memitem">
@@ -102,11 +103,11 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>initializes a new instance of the <a class="el" href="classphosphorus_1_1hyperlisp_1_1helpers_1_1HyperlispBuilder.html" title="class responsible for creating hyperlisp from a phosphorus.core.Node list ">HyperlispBuilder</a> class </p>
+<p>Initializes a new instance of the <a class="el" href="classphosphorus_1_1hyperlisp_1_1helpers_1_1HyperlispBuilder.html" title="Class encapsulating internals of creation of Hyperlisp. ">HyperlispBuilder</a> class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>application context object</td></tr>
-    <tr><td class="paramname">nodes</td><td>nodes to convert into hyperlisp</td></tr>
+    <tr><td class="paramname">context</td><td>Application context object.</td></tr>
+    <tr><td class="paramname">nodes</td><td>Nodes to convert into <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -132,7 +133,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>retrieves the hyperlisp </p>
+<p>Parses and retrieves the <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a>. </p>
+<p>Will convert the given pf.lambda node structure to <a class="el" href="classphosphorus_1_1hyperlisp_1_1Hyperlisp.html" title="Class to help transform between Hyperlisp and Nodes. ">Hyperlisp</a> and return to caller. </p>
 <p>hyperlisp</p>
 
 </div>

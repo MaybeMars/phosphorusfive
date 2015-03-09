@@ -52,32 +52,36 @@
 </div><!--header-->
 <div class="contents">
 
-<p>helper class for classes that requires to set and retrieve values from collections, such as <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Session.html" title="Helper to retrieve and set session values ">Session</a> and <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Application.html" title="Helper to retrieve and set application values ">Application</a>  
+<p>Helper class to help set, get and list collections.  
  <a href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b3f306fdeee0223ba5d8b5399b19aca"><td class="memItemLeft" align="right" valign="top">delegate object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#a2b3f306fdeee0223ba5d8b5399b19aca">GetDelegate</a> (string key)</td></tr>
-<tr class="memdesc:a2b3f306fdeee0223ba5d8b5399b19aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback functor object for Get operation  <a href="#a2b3f306fdeee0223ba5d8b5399b19aca">More...</a><br/></td></tr>
+<tr class="memdesc:a2b3f306fdeee0223ba5d8b5399b19aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback functor object for Get operation.  <a href="#a2b3f306fdeee0223ba5d8b5399b19aca">More...</a><br/></td></tr>
 <tr class="separator:a2b3f306fdeee0223ba5d8b5399b19aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26126997a317c64318585925c80848e5"><td class="memItemLeft" align="right" valign="top">delegate IEnumerable&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#a26126997a317c64318585925c80848e5">ListDelegate</a> ()</td></tr>
-<tr class="memdesc:a26126997a317c64318585925c80848e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback functor object for List operation  <a href="#a26126997a317c64318585925c80848e5">More...</a><br/></td></tr>
+<tr class="memdesc:a26126997a317c64318585925c80848e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback functor object for list operation.  <a href="#a26126997a317c64318585925c80848e5">More...</a><br/></td></tr>
 <tr class="separator:a26126997a317c64318585925c80848e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96b8327ad402f7ffadda0d3f10270cc2"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#a96b8327ad402f7ffadda0d3f10270cc2">SetDelegate</a> (string key, object value)</td></tr>
-<tr class="memdesc:a96b8327ad402f7ffadda0d3f10270cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback functor object for Set operation  <a href="#a96b8327ad402f7ffadda0d3f10270cc2">More...</a><br/></td></tr>
+<tr class="memdesc:a96b8327ad402f7ffadda0d3f10270cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback functor object for set operation.  <a href="#a96b8327ad402f7ffadda0d3f10270cc2">More...</a><br/></td></tr>
 <tr class="separator:a96b8327ad402f7ffadda0d3f10270cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a26858de189a07345e2f6202d187a76fd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#a26858de189a07345e2f6202d187a76fd">Set</a> (<a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> node, <a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#a96b8327ad402f7ffadda0d3f10270cc2">SetDelegate</a> functor)</td></tr>
-<tr class="memdesc:a26858de189a07345e2f6202d187a76fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets a value to a collection  <a href="#a26858de189a07345e2f6202d187a76fd">More...</a><br/></td></tr>
+<tr class="memdesc:a26858de189a07345e2f6202d187a76fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a single value in a collection.  <a href="#a26858de189a07345e2f6202d187a76fd">More...</a><br/></td></tr>
 <tr class="separator:a26858de189a07345e2f6202d187a76fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e4313abd1a0cf804346f0844d8c1d91"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#a9e4313abd1a0cf804346f0844d8c1d91">Get</a> (<a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> node, <a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#a2b3f306fdeee0223ba5d8b5399b19aca">GetDelegate</a> functor)</td></tr>
-<tr class="memdesc:a9e4313abd1a0cf804346f0844d8c1d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets a value from a collection  <a href="#a9e4313abd1a0cf804346f0844d8c1d91">More...</a><br/></td></tr>
+<tr class="memdesc:a9e4313abd1a0cf804346f0844d8c1d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value from a collection.  <a href="#a9e4313abd1a0cf804346f0844d8c1d91">More...</a><br/></td></tr>
 <tr class="separator:a9e4313abd1a0cf804346f0844d8c1d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bda2a64ee0626eb6318569f3463ea9a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#a5bda2a64ee0626eb6318569f3463ea9a">List</a> (<a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> node, <a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#a26126997a317c64318585925c80848e5">ListDelegate</a> functor)</td></tr>
+<tr class="memdesc:a5bda2a64ee0626eb6318569f3463ea9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists all items from a collection.  <a href="#a5bda2a64ee0626eb6318569f3463ea9a">More...</a><br/></td></tr>
+<tr class="separator:a5bda2a64ee0626eb6318569f3463ea9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>helper class for classes that requires to set and retrieve values from collections, such as <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Session.html" title="Helper to retrieve and set session values ">Session</a> and <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Application.html" title="Helper to retrieve and set application values ">Application</a> </p>
+<div class="textblock"><p>Helper class to help set, get and list collections. </p>
+<p>Helper class for Active Events that needs to set, get and list collections, such as <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Session.html" title="Helper to retrieve and set Session values. ">Session</a>, <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Cookies.html" title="Helper to retrieve and set Cookie values. ">Cookies</a> and <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Application.html" title="Helper to retrieve and set Application values. ">Application</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a9e4313abd1a0cf804346f0844d8c1d91"></a>
 <div class="memitem">
@@ -117,12 +121,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>gets a value from a collection </p>
+<p>Gets a value from a collection. </p>
+<p>Expects caller to supply a functor callback, that should retrieve one item from the collection. Will loop through all keys caller requests to set, and invoke callback once for each item. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">node</td><td>root node of collection Active Event</td></tr>
-    <tr><td class="paramname">context</td><td>application context</td></tr>
-    <tr><td class="paramname">functor</td><td>callback functor, will be invoked once for each key</td></tr>
+    <tr><td class="paramname">node</td><td>Root node of collection Active Event invoker.</td></tr>
+    <tr><td class="paramname">context</td><td><a class="el" href="classphosphorus_1_1web_1_1ui_1_1Application.html" title="Helper to retrieve and set Application values. ">Application</a> context.</td></tr>
+    <tr><td class="paramname">functor</td><td>Callback functor, will be invoked once for each key.</td></tr>
   </table>
   </dd>
 </dl>
@@ -143,7 +148,59 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>callback functor object for Get operation </p>
+<p>Callback functor object for Get operation. </p>
+<p>Functor that expects callback to return an object matching the given key parameter. Used in for instance <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Session.html" title="Helper to retrieve and set Session values. ">Session</a> and <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Application.html" title="Helper to retrieve and set Application values. ">Application</a> wrapper to retrieve one item with the given name. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5bda2a64ee0626eb6318569f3463ea9a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void phosphorus.web.ui.Common.CollectionBase.List </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a>&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classphosphorus_1_1web_1_1ui_1_1Common_1_1CollectionBase.html#a26126997a317c64318585925c80848e5">ListDelegate</a>&#160;</td>
+          <td class="paramname"><em>functor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lists all items from a collection. </p>
+<p>Expects caller to supply a functor callback, that should return all keys from the collection. Will loop through all keys supplied by caller, use them as a filter, and return all items from the collection, having a key that matches the filter(s). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Root node of Active Event invoked.</td></tr>
+    <tr><td class="paramname">context</td><td><a class="el" href="classphosphorus_1_1web_1_1ui_1_1Application.html" title="Helper to retrieve and set Application values. ">Application</a> context.</td></tr>
+    <tr><td class="paramname">functor</td><td>Callback functor, will be invoked once to retrieve all keys from collection.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -160,7 +217,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>callback functor object for List operation </p>
+<p>Callback functor object for list operation. </p>
+<p>Expects callback to return all keys. Used in among the <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Session.html" title="Helper to retrieve and set Session values. ">Session</a> and <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Application.html" title="Helper to retrieve and set Application values. ">Application</a> wrapper, to ask for all keys in <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Session.html" title="Helper to retrieve and set Session values. ">Session</a> and <a class="el" href="classphosphorus_1_1web_1_1ui_1_1Application.html" title="Helper to retrieve and set Application values. ">Application</a>. </p>
 
 </div>
 </div>
@@ -202,12 +260,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>sets a value to a collection </p>
+<p>Sets a single value in a collection. </p>
+<p>Requres caller to supply a functor callback, that should set one item in the collection. Will loop through all keys caller requests to set, and invoke callback once for each item. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">node</td><td>root node of collection Active Event</td></tr>
-    <tr><td class="paramname">context</td><td>application context</td></tr>
-    <tr><td class="paramname">functor</td><td>callback functor, will be invoked once for each key</td></tr>
+    <tr><td class="paramname">node</td><td>Root node of collection Active Event invoker.</td></tr>
+    <tr><td class="paramname">context</td><td><a class="el" href="classphosphorus_1_1web_1_1ui_1_1Application.html" title="Helper to retrieve and set Application values. ">Application</a> context.</td></tr>
+    <tr><td class="paramname">functor</td><td>Callback functor, will be invoked once for each key.</td></tr>
   </table>
   </dd>
 </dl>
@@ -238,7 +297,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>callback functor object for Set operation </p>
+<p>Callback functor object for set operation. </p>
+<p>Expects callback to change or set one item, with the given name, to the given value. </p>
 
 </div>
 </div>

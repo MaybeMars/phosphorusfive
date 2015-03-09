@@ -52,7 +52,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p>Helper class for common operations and methods used in the [pf.data.xxx] namespace.  
+<p>Helper class for common operations.  
  <a href="classphosphorus_1_1data_1_1helpers_1_1Common.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -60,19 +60,110 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a8113c610b80c8350903b16d174bfaa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1data_1_1helpers_1_1Common.html#a3a8113c610b80c8350903b16d174bfaa">Initialize</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context)</td></tr>
 <tr class="memdesc:a3a8113c610b80c8350903b16d174bfaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure database is properly initialized.  <a href="#a3a8113c610b80c8350903b16d174bfaa">More...</a><br/></td></tr>
 <tr class="separator:a3a8113c610b80c8350903b16d174bfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce3233e8ab709a1583ba0dcfa7c6ae4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1data_1_1helpers_1_1Common.html#a5ce3233e8ab709a1583ba0dcfa7c6ae4">AddNodeToChanges</a> (<a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> idxDest, List&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt; changed)</td></tr>
+<tr class="memdesc:a5ce3233e8ab709a1583ba0dcfa7c6ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the file node to changes.  <a href="#a5ce3233e8ab709a1583ba0dcfa7c6ae4">More...</a><br/></td></tr>
+<tr class="separator:a5ce3233e8ab709a1583ba0dcfa7c6ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7bf4d212aca01cf512f962f22e9d185"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1data_1_1helpers_1_1Common.html#ad7bf4d212aca01cf512f962f22e9d185">SaveAffectedFiles</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, List&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt; changed)</td></tr>
+<tr class="memdesc:ad7bf4d212aca01cf512f962f22e9d185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the affected files.  <a href="#ad7bf4d212aca01cf512f962f22e9d185">More...</a><br/></td></tr>
+<tr class="separator:ad7bf4d212aca01cf512f962f22e9d185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d208e5504c2582395f4457e2ee13ffc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1data_1_1helpers_1_1Common.html#a5d208e5504c2582395f4457e2ee13ffc">GetAvailableFileNode</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context)</td></tr>
+<tr class="memdesc:a5d208e5504c2582395f4457e2ee13ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the available file node.  <a href="#a5d208e5504c2582395f4457e2ee13ffc">More...</a><br/></td></tr>
+<tr class="separator:a5d208e5504c2582395f4457e2ee13ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ac03aff641be1c34fa62c8dc605186e95"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1data_1_1helpers_1_1Common.html#ac03aff641be1c34fa62c8dc605186e95">Database</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ac03aff641be1c34fa62c8dc605186e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the node containing the actual data in the database.  <a href="#ac03aff641be1c34fa62c8dc605186e95">More...</a><br/></td></tr>
+<tr class="memdesc:ac03aff641be1c34fa62c8dc605186e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is your actual Database.  <a href="#ac03aff641be1c34fa62c8dc605186e95">More...</a><br/></td></tr>
 <tr class="separator:ac03aff641be1c34fa62c8dc605186e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7c3d0355228df5c62a757d0e31c8020"><td class="memItemLeft" align="right" valign="top">static object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1data_1_1helpers_1_1Common.html#af7c3d0355228df5c62a757d0e31c8020">Lock</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af7c3d0355228df5c62a757d0e31c8020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to lock database access.  <a href="#af7c3d0355228df5c62a757d0e31c8020">More...</a><br/></td></tr>
 <tr class="separator:af7c3d0355228df5c62a757d0e31c8020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Helper class for common operations and methods used in the [pf.data.xxx] namespace. </p>
+<div class="textblock"><p>Helper class for common operations. </p>
+<p>Contains helper methods for common operations shared among for instance the <b>[pf.data.select]</b> and <b>[pf.data.remove]</b> Active Events. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5ce3233e8ab709a1583ba0dcfa7c6ae4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void phosphorus.data.helpers.Common.AddNodeToChanges </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a>&#160;</td>
+          <td class="paramname"><em>idxDest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt;&#160;</td>
+          <td class="paramname"><em>changed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the file node to changes. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>Cleanup these parts to create better API. </dd></dl>
+<p>When you update or remove items from the database, then this method is useful for figuring out which files are affected by your operation.</p>
+<p>Pass in the node that was either changed or removed, and the method will append the file node necessary to save as a consequence in the changed parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idxDest</td><td>Which node was changed.</td></tr>
+    <tr><td class="paramname">changed</td><td>List of nodes containing the files that needs to be saved due to change operation.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d208e5504c2582395f4457e2ee13ffc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> phosphorus.data.helpers.Common.GetAvailableFileNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a>&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the available file node. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>Do we really need to save the file? It is not really supposed to be necessary... </dd></dl>
+<p>Will automatically figure out the next available file node for you, and create a container file which will be used for the node. </p>
+<dl class="section return"><dt>Returns</dt><dd>The next available file node.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Aplication context.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a3a8113c610b80c8350903b16d174bfaa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -96,9 +187,55 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Makes sure database is properly initialized. </p>
+<p>Basically loads all files from the database path, which can be found in your application configuration file, and loads up all items from all pf.lambda files inside your databasse directory, and stores them in memory.</p>
+<p>After initial execution, this method will return immediately, not being particularly costy in any ways. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>application context</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad7bf4d212aca01cf512f962f22e9d185"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void phosphorus.data.helpers.Common.SaveAffectedFiles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt;&#160;</td>
+          <td class="paramname"><em>changed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves the affected files. </p>
+<p>Will save all files in the changed parameter that needs to be save as a consequence of a change or remove operation into the database. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Application context.</td></tr>
+    <tr><td class="paramname">changed</td><td>List of files that were changed, and hence will be saved.</td></tr>
   </table>
   </dd>
 </dl>
@@ -124,8 +261,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the node containing the actual data in the database. </p>
-<p>database tree</p>
+<p>This is your actual Database. </p>
+<p>The <b>[pf.data.xxx]</b> namespace in Phosphorus.Five, is a memory-based Database, allowing you to have a quick and dirty database implementation, not usable for huge data centers, but smaller websites, in addition to serving as a cache object for you. This is where you actual Database data is stored. </p>
+<p>Database node tree.</p>
 
 </div>
 </div>
@@ -148,6 +286,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Used to lock database access. </p>
+<p>Some operations in the database layer of Phosphorus.Five, requires that only one thread access the database at the same time. This is the object we use to lock such access to the database. </p>
 <p>lock object</p>
 
 </div>
