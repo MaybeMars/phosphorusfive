@@ -71,6 +71,7 @@ Classes</h2></td></tr>
 <li><a class="el" href="classphosphorus_1_1ajax_1_1widgets_1_1Literal.html" title="Allows you to create a widget that contains simple text or HTML. ">Literal</a> - Allows you to create widgets that contains simple text or HTML values.</li>
 <li><a class="el" href="classphosphorus_1_1ajax_1_1widgets_1_1Container.html" title="A widget that can contains children widgets of its own. ">Container</a> - A widget that can contain children widgets of its own.</li>
 <li><a class="el" href="classphosphorus_1_1ajax_1_1widgets_1_1Void.html" title="A widget that has neither children controls, nor content. ">Void</a> - Useful for creating widgets that has neither children widgets, nor any inner HTML. HTML input elements are one example.</li>
+<li><a class="el" href="classphosphorus_1_1ajax_1_1widgets_1_1Widget.html" title="Abstract base class for all widgets in Phosphorus.Ajax. ">Widget</a> - Base class with common functionality for all widgets.</li>
 </ul>
 <p>However, since you can override any property, and add any attribute you wish, to any of the above widgets, these widgets are actually enough to be able to create any HTML markup you wish. If you wish to create a container widget, that renders like an HTML address element, then all you have to do, as to set the <em>"ElementType"</em> property of your widget to "address".</p>
 <p>If you wish to handle the <em>"onmouseover"</em> DOM event on the server-side, then all you need to do, is to provide an "onmouseover" attribute, referencing the event handler from your codebehind, and voila; You're in <em>"server-land"</em>, whenever anyone hovers their mouse over your HTML element.</p>
@@ -107,7 +108,7 @@ namespace samples
         <b>[WebMethod]</b>
         protected void hello_onclick (<b>pf.Literal</b> sender, EventArgs e)
         {
-            sender.innerValue = "Hello World";
+            sender.innerValue = "Hello World :)";
         }
     }
 }
