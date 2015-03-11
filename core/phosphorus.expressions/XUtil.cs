@@ -15,6 +15,7 @@ using phosphorus.expressions.exceptions;
 
 namespace phosphorus.expressions
 {
+    /// \todo Cleanup all of these comments, in addition to rethinking the name of the "dataSource" parameters, since they're highly unintuitive for the moment
     /// <summary>
     ///     Helper class for handling pf.lambda Expression objects.
     /// 
@@ -112,8 +113,8 @@ namespace phosphorus.expressions
         ///     An example of a formatted node;
         /// 
         ///     <pre>
-        ///     foo:bar {0}
-        ///       :some-value</pre>
+        /// foo:bar {0}
+        ///   :some-value</pre>
         /// </summary>
         /// <returns><c>true</c> if node contains formatting parameters; otherwise, <c>false</c>.</returns>
         /// <param name="node">Node to check.</param>
@@ -633,11 +634,8 @@ namespace phosphorus.expressions
                     source = Single<object> (node.LastChild, dataSource, context);
                     
                     // making sure we support "escaped expressions"
-                    // else if source is a node, we make sure we clone it, in case source and destination overlaps
                     if (source is string && (source as string).StartsWith ("\\"))
                         source = (source as string).Substring (1);
-                    else if (source is Node)
-                        source = (source as Node).Clone ();
                 } else {
                     // there are no values in [src] node, trying to create source out of [src]'s children
                     if (node.LastChild.Count == 1) {

@@ -22,15 +22,15 @@ namespace phosphorus.expressions
     /// <summary>
     ///     The main expression class in Phosphorus.Five.
     /// 
-    ///     Responsible for parsing, building and evaluating your pf.lambda expressions, according to what types of iterators
-    ///     you compose together to form your complete expression.
+    ///     Responsible for parsing, building, and evaluating your pf.lambda expressions, according to what types of iterators
+    ///     you mix together, to form your complete expression.
     /// 
     ///     An expression is normally recognized automatically by any Active Events that supports them, and starts with a "@" character,
-    ///     followed by any number of Iterator objects, ending with a type declaration.
+    ///     followed by any number of <see cref="phosphorus.expressions.iterators.Iterator">Iterators</see>, ending with a type declaration.
     /// 
     ///     Example;
     /// 
-    ///     <pre>@/../*?node</pre>
+    ///     <pre>@/../"*"?node</pre>
     /// 
     ///     The above example will find all children nodes of the root node of your current execution tree.
     /// 
@@ -45,9 +45,130 @@ namespace phosphorus.expressions
     ///     Both '?count' and '?path' types of expressions are "read-only", and cannot be used as destinations, or changed in any
     ///     ways. All other types of expressions, can be both assigned to, and retrieved.
     /// 
+    ///     Each iterator, starts with a forward slash /, and ends with any of the following characters; "!&^|()?/". If you wish to
+    ///     use any of the previously mentioned 8 special characters as parts of your iterators, you must put your entire iterator inside
+    ///     double-quotes, for instance;
+    /// 
+    ///     <pre>@/"foo&bar"?value</pre>
+    /// 
+    ///     The above expression will look for a node who's name is "foo&bar".
+    /// 
+    ///     You can use any number of iterators when you compose your expressions, and each iterator will be evaluated in a left-to-right manner,
+    ///     which means that your first iterator will be evaluated first, and then used as the input to your next iterator. This makes your
+    ///     iterators becomes evaluated as a "chain of enumerables", where each iterator appends a new "filter criteria", and creates a new
+    ///     result, based upon its previous iterator, that it passes into the next iterator in the chain.
+    /// 
+    ///     It might help to think of expressions as XPath expressions, since they to some extent do the same thing.
+    /// 
+    ///     By mixing the different <see cref="phosphorus.expressions.iterators.Iterator">Iterators</see> in your expressions, together
+    ///     with <see cref="phosphorus.expressions.Logical">Logicals</see>, allowing for you to perform Boolean Algebraic operations
+    ///     on expressions, and sub-expressions, you can probably extract any node-set you wish, from any starting pf.lambda node tree 
+    ///     you wish to create a sub-set from. This is why it is a <em>"Hyperdimensional Boolean Algebraic graph object Expression 
+    ///     implementation"</em>. Since it allows you to treat graph objects, as if they have an infinite number of additional dimensions, in
+    ///     addition to the two that are automatically given in all graph objects, which are; width and height.
+    /// 
+    ///     Below is an example of an expression that will extract all 'names', from all nodes from the root of your tree, having a parent 
+    ///     node, who's value equals "foo", but who's name is not "bar", but only if the node has at least one children node of its own.
+    /// 
+    ///     <pre>@/../"**"(/=foo!/bar&/0/.)?name</pre>
+    /// 
+    ///     To understand the powers of pf.lambda expressions might be difficult when you start using Phosphorus.Five. However, it might
+    ///     help to think of them as an alternative to algorithms, or a dynamica version of LINQ from C#, or stored IEnumerables, if you wish.
+    ///     But if you can imagine a result you wish to extract from a pf.lambda node tree, you can probably create an expression that can extract
+    ///     that node-set for you. For instance, imagine trying to set the value of all intelligent animals main value node to "yes", except
+    ///     Homo-Sapien, in the below data structure;
+    /// 
+    ///     <pre>_data
+    ///   homo-sapien
+    ///     iq:yes
+    ///   ape
+    ///     iq:yes
+    ///   donkey
+    ///     iq:no
+    ///   dog
+    ///     iq:no
+    ///   fish-like-mammals
+    ///     dolphins
+    ///       iq:yes
+    ///     salmon
+    ///       iq:no
+    ///     killer-whales
+    ///       iq:yes
+    /// set:@/../"**"/iq/=yes/.(!/homo-sapiens)?value
+    ///   source:yes</pre>
+    /// 
+    ///     Creating C# code to do the equivalent of the above pf.lambda expression, would end up in a monstrous, recursive, multiple methods 
+    ///     implementation, spanning possibly dozens, if not more than 100 lines of code. With pf.lambda expressions, it's a simple one-liner 
+    ///     expression, roughly 40 characters long.
+    /// 
+    ///     With pf.lambda expressions, you can very often completely eliminate recursive method invocations, and in fact even conditional branching,
+    ///     and methods in general, by intelligently composing your expressions together, to extract what ever result-set you want to manipulate,
+    ///     or retrieve. With pf.lambda expressions, you can easily for instance create a list result-set, from a relational graph object, without
+    ///     resorting to recursive methods, or similar concepts. Consider for instance the code below, that creates a list of all the intelligent
+    ///     and sentient species on our planets;
+    /// 
+    ///     <pre>_destination
+    /// _data
+    ///   binary-based-life-forms
+    ///     terminator-t1
+    ///       iq:no
+    ///     World-Wide-Web
+    ///       iq:yes
+    ///   homo-sapien
+    ///     iq:yes
+    ///   ape
+    ///     iq:yes
+    ///   donkey
+    ///     iq:no
+    ///   dog
+    ///     iq:no
+    ///   fish-like-mammals
+    ///     dolphins
+    ///       iq:yes
+    ///     salmon
+    ///       iq:no
+    ///     killer-whales
+    ///       iq:yes
+    /// append:@/-2?node
+    ///   source:@/../"*"/_data/"**"/iq/=yes/.?name</pre>
+    /// 
+    ///     You can also convert the results of your expressions, to any of the types that there exists a [pf.hyperlisp.get-object-value.xxx]
+    ///     Active Event for. You do this by appending the type after your expression's type declaration, separated with a period (.).
+    ///     For instance, to convert the results of an expression to integers, you could use something like this;
+    /// 
+    ///     <pre>_input:5
+    /// _result
+    /// set:@/-?value
+    ///   source:@/./-2?value.int</pre>
+    /// 
+    ///     You can also create <em>"reference expressions"</em>, which are expressions leading to other expressions, where you do not want to
+    ///     retrieve the expressions your expression is leading too, but rather what those expressions are referring to. When you create
+    ///     reference expressions, then the results from your outer expressions will be evaluated, and if the results are another expression,
+    ///     then that expression will be evaluated, and its results returned back to the original caller. This way you can combine constant
+    ///     values and expressions, and create reference expressions, that will either return the constant they point to, or the value their
+    ///     referenced expressions points to. Consider this;
+    /// 
+    ///     <pre>_src:su
+    ///   first:@/.?value
+    ///   second:cc
+    ///   third:@/+?name
+    ///   ess
+    /// _destination
+    /// set:@/-?value
+    ///   source:\@@/./-2/"*"?value</pre>
+    /// 
+    ///     Most Active Events in Phosphorus.Five can take expressions as their arguments. Understanding expressions, is key to learning
+    ///     Phosphorus.Five.
+    /// 
     ///     PS!<br/>
     ///     Normally you don't want to consume this class directly, but instead use it indirectly through the XUtil class,
     ///     which contains many helper methods to create and evaluate expressions for you!
+    /// 
+    ///     PPS!<br/>
+    ///     You normally don't need to put neither the "*" iterator, nor the "**" inside of double-quotes, but since the documentation
+    ///     system we're using to create this manual, recognizes a slash (/) followed by an asterix (*) as a "special character", all
+    ///     places where we use the "*" iterator, and the "**" iterator, must be escaped inside of double-quotes for the documentation
+    ///     of Phosphorus.Five. This is not necessary when you create your own expressions, but a restriction of our documentation generator.
     /// </summary>
     public class Expression
     {

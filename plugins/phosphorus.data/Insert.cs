@@ -12,18 +12,75 @@ using phosphorus.data.helpers;
 // ReSharper disable UnusedMember.Local
 // ReSharper disable UnusedMember.Global
 
+/// <summary>
+///     Main namespace for all [pd.data.xxx] Active Events.
+/// 
+///     The [pf.data.xxx] namespace in Phosphorus.Five contains a memory-bases database implementation, for 
+///     small data-servers, allowing you to have a quick and dirty database, for smaller systems, and smaller pieces of data.
+/// 
+///     Although you should not use the [pf.data.xxx] database for larger databases, you can connect several servers together,
+///     creating a cluster of memory-based database servers, facilitating for huge data-centers.
+/// 
+///     The [pf.data.xxx] database has 3 settings it reads from your application's config file. These are;
+/// 
+///     * <em>database-path</em> - This is the relative directory to where the database stores its files.
+///     * <em>database-nodes-per-file</em> - This is the number of items your database will allow for each file.
+///     * <em>database-files-per-directory</em> - This is the number of files your database will store for each sub-directory.
+/// 
+///     The database stores its objects in Hyperlisp format, which allows you to edit your database's content, using
+///     nothing but a text-based editor. The database will create sub-directories beneath its database-path, where each directory 
+///     will not create more files then its <em>"database-files-per-directory"</em> setting.
+/// 
+///     The database relies heavily upon <see cref="phosphorus.expressions.Expression">Expressions</see>, and stores its items
+///     in memory in one root node, containing one node for each database file, where each file-node contains the database items.
+///     This means that to access for instance items of type <em>"address"</em>, you must use an expression resembling something like this;
+/// 
+///     <pre>@/*/*/address ...</pre>
+/// </summary>
 namespace phosphorus.data
 {
     /// <summary>
-    ///     Class wrapping [pf.data.insert] and its associated supporting methods
+    ///     Class wrapping [pf.data.insert].
+    /// 
+    ///     Contains the Active Events [pf.data.insert], and its associated helper methods.
     /// </summary>
     public static class Insert
     {
         /// <summary>
-        ///     Inserts nodes into database
+        ///     Inserts nodes into database.
+        /// 
+        ///     Will insert one or more nodes into your database. The nodes inserted, are the children nodes, or the expression
+        ///     pointed to by the value of the main node.
+        /// 
+        ///     Example;
+        /// 
+        ///     <pre>
+        /// pf.data.insert
+        ///   foo-bar
+        ///     name:Thomas Hansen
+        ///     age:1000 years</pre>
+        /// 
+        ///     All items inserted into your database, will have an ID automatically created for them, unless you explicitly
+        ///     give your items an ID yourself. This ID wil be of type 'guid', and globally unique for your items.
+        /// 
+        ///     This ID will be the 'value' of your item 'root node'. For instance, in the example above, the ID for [foo-bar], 
+        ///     will become the value of the [foo-bar] node.
+        /// 
+        ///     If you let this Active Event create an automatic ID for your items, then this ID will be returned as the 
+        ///     value of all your inserted items.
+        /// 
+        ///     Below is an example of how to use this Active Event with an expression pointing to the items to insert;
+        /// 
+        ///     <pre>
+        /// _items
+        ///   foo1
+        ///     name:John Doe
+        ///   foo2
+        ///     name:Jane Doe
+        /// pf.data.insert:@/-/*?node</pre>
         /// </summary>
-        /// <param name="context">Application context</param>
-        /// <param name="e">Parameters passed into Active Event</param>
+        /// <param name="context">Application context.</param>
+        /// <param name="e">Parameters passed into Active Event.</param>
         [ActiveEvent (Name = "pf.data.insert")]
         private static void pf_data_insert (ApplicationContext context, ActiveEventArgs e)
         {
