@@ -50,19 +50,20 @@
 </div><!--header-->
 <div class="contents">
 
-<p>wraps <b>[wait]</b> keyword  
+<p>Class wrapping the <b>[wait]</b> keyword.  
  <a href="classphosphorus_1_1threading_1_1Wait.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:gaf354b68c17bb05d4e6be8f5072d14cdd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ActiveEvents.html#gaf354b68c17bb05d4e6be8f5072d14cdd">lambda_wait</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, <a class="el" href="classphosphorus_1_1core_1_1ActiveEventArgs.html">ActiveEventArgs</a> e)</td></tr>
-<tr class="memdesc:gaf354b68c17bb05d4e6be8f5072d14cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">waits for all <b>[lambda.fork]</b> children to finish their work, before allowing execution to flow out of scope. the <b>[wait]</b> node will also be passed into all <b>[lambda.thread]</b> active events beneath itself, as a reference node, as value of <b>[_wait]</b>. however, if you access the <b>[_wait]</b> node inside your thread, you should probably use the <b>[lock]</b> statement, since access to <b>[_wait]</b> is shared among all threads being children of <b>[wait]</b>  <a href="group__ActiveEvents.html#gaf354b68c17bb05d4e6be8f5072d14cdd">More...</a><br/></td></tr>
+<tr class="memdesc:gaf354b68c17bb05d4e6be8f5072d14cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for all <b>[lambda.fork]</b> children to finish, before execution passes on.  <a href="group__ActiveEvents.html#gaf354b68c17bb05d4e6be8f5072d14cdd">More...</a><br/></td></tr>
 <tr class="separator:gaf354b68c17bb05d4e6be8f5072d14cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>wraps <b>[wait]</b> keyword </p>
+<div class="textblock"><p>Class wrapping the <b>[wait]</b> keyword. </p>
+<p>The <b>[wait]</b> keyword, allows you to create multiple threads beneath it, where all threads must finish, before execution leaves the <b>[wait]</b> block. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
-  <p id="copyright-notice">Phosphorus.Five is Free and Open Source Software. Phosphorus is licensed under the terms of the <a href="http://opensource.org/licenses/MIT">MIT license</a>. Phosphorus is a <a href="http://magixilluminate.com">Magix Illuminate</a> Production</p>
+  <p id="copyright-notice">Phosphorus.Five is Free and Open Source Software. Phosphorus is licensed under the terms of the <a href="http://opensource.org/licenses/MIT">MIT license</a>. Phosphorus is a <a href="http://magixilluminate.com">Magix Illuminate</a> Production. <a href="https://github.com/polterguy/phosphorus-five/issues">Report a bug, or an issue</a>.</p>
 </body>
 </html>
