@@ -55,9 +55,9 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0ae5b18644bd986affc5d2f91b79ed15"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1core_1_1Utilities.html#a0ae5b18644bd986affc5d2f91b79ed15">Convert&lt; T &gt;</a> (object value, <a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, T defaultValue=default(T))</td></tr>
-<tr class="memdesc:a0ae5b18644bd986affc5d2f91b79ed15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given value to type T.  <a href="#a0ae5b18644bd986affc5d2f91b79ed15">More...</a><br/></td></tr>
-<tr class="separator:a0ae5b18644bd986affc5d2f91b79ed15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7fd73ef4156346f852ee28517ab530"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1core_1_1Utilities.html#abc7fd73ef4156346f852ee28517ab530">Convert&lt; T &gt;</a> (object value, <a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, T defaultValue=default(T), bool encode=false)</td></tr>
+<tr class="memdesc:abc7fd73ef4156346f852ee28517ab530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given value to type T.  <a href="#abc7fd73ef4156346f852ee28517ab530">More...</a><br/></td></tr>
+<tr class="separator:abc7fd73ef4156346f852ee28517ab530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71254a853a20f2ff2690294526c102ce"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1core_1_1Utilities.html#a71254a853a20f2ff2690294526c102ce">IsNumber</a> (string value)</td></tr>
 <tr class="memdesc:a71254a853a20f2ff2690294526c102ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if string can be converted to an integer.  <a href="#a71254a853a20f2ff2690294526c102ce">More...</a><br/></td></tr>
 <tr class="separator:a71254a853a20f2ff2690294526c102ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -72,7 +72,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Utility class, contains helpers for common operations. </p>
 <p>This class contains helper methods used both by the library internally, and exposed for you to use in your programs. One particularly interesting method for you, is the Convert method, that allows you to convert any object, to any other type of object, using the internal type system of Phosphorus.Five. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0ae5b18644bd986affc5d2f91b79ed15"></a>
+<a class="anchor" id="abc7fd73ef4156346f852ee28517ab530"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -95,7 +95,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>defaultValue</em> = <code>default&#160;(T)</code>&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code>default&#160;(T)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>encode</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -118,6 +124,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">value</td><td>Value to convert.</td></tr>
     <tr><td class="paramname">context</td><td>Application context. Needed since it might potentially have to raise "conversion Active Events" to convert your value.</td></tr>
     <tr><td class="paramname">defaultValue</td><td>Default value to return, if no conversion is possible.</td></tr>
+    <tr><td class="paramname">encode</td><td>If true, then the value will be encoded as base64, if necessary, and value is byte<b>[]</b>.</td></tr>
   </table>
   </dd>
 </dl>

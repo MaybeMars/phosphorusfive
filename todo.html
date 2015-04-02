@@ -51,9 +51,7 @@
 <dd>Support paths with "." in them, since now we don't support folders and paths with "." within their names  </dd>
 <dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="classphosphorus_1_1core_1_1Loader.html#a50e35ac0467eb72287c650d3b0f09666">phosphorus.core.Loader.UnloadAssembly</a>  (string name)</dt>
 <dd>figure out how to "unload" assembly from AppDomain  </dd>
-<dt><a class="anchor" id="_todo000019"></a>Member <a class="el" href="classphosphorus_1_1data_1_1helpers_1_1Common.html#a5ce3233e8ab709a1583ba0dcfa7c6ae4">phosphorus.data.helpers.Common.AddNodeToChanges</a>  (Node idxDest, List&lt; Node &gt; changed)</dt>
-<dd>Cleanup these parts to create better API.  </dd>
-<dt><a class="anchor" id="_todo000020"></a>Member <a class="el" href="classphosphorus_1_1data_1_1helpers_1_1Common.html#a5d208e5504c2582395f4457e2ee13ffc">phosphorus.data.helpers.Common.GetAvailableFileNode</a>  (ApplicationContext context)</dt>
+<dt><a class="anchor" id="_todo000019"></a>Member <a class="el" href="classphosphorus_1_1data_1_1helpers_1_1Common.html#a5d208e5504c2582395f4457e2ee13ffc">phosphorus.data.helpers.Common.GetAvailableFileNode</a>  (ApplicationContext context)</dt>
 <dd>Do we really need to save the file? It is not really supposed to be necessary...  </dd>
 <dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="classphosphorus_1_1expressions_1_1Expression.html#a69f04d1622f7c4747629e7e93fa7c198">phosphorus.expressions.Expression.CreateMatchFromIterator</a>  (IteratorGroup group, string type)</dt>
 <dd>shares a lot of functionality with XUtil.ExpressionType, try to refactor  </dd>
@@ -69,19 +67,19 @@
 <dd>refactor, too complex, also contains overlapping functionality with Expression.cs  </dd>
 <dt><a class="anchor" id="_todo000013"></a>Member <a class="el" href="classphosphorus_1_1expressions_1_1XUtil.html#a2504b3e4da3d5b3ef467bd69911c7e16">phosphorus.expressions.XUtil.IsExpression</a>  (string value)</dt>
 <dd>simplify, needs support for expressions on multiple lines, having first iterator on second line  </dd>
-<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="classphosphorus_1_1expressions_1_1XUtil.html#a140669fed1bde27add1790bd79c8e3a2">phosphorus.expressions.XUtil.Iterate</a>  (Node node, Node dataSource, Node formattingSource, ApplicationContext context)</dt>
-<dd>the next one is only used in <b>[pf.data.select]</b>, try to rethink logic of this part, somehow  </dd>
 <dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="classphosphorus_1_1expressions_1_1XUtil.html#a208be465402ca28b5f524a97ae432d6f">phosphorus.expressions.XUtil.Iterate</a>  (string expression, Node dataSource, ApplicationContext context)</dt>
 <dd>Rehink the name of the dataSource parameters in all of these methods, since it is a highly unintuitive name.  </dd>
-<dt><a class="anchor" id="_todo000018"></a>Member <a class="el" href="classphosphorus_1_1expressions_1_1XUtil.html#a1d735bb226fd826a650101b11795c3fd">phosphorus.expressions.XUtil.SingleImplementation&lt; T &gt;</a>  (SingleDelegate&lt; T &gt; functor, ApplicationContext context, T defaultValue)</dt>
+<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="classphosphorus_1_1expressions_1_1XUtil.html#a140669fed1bde27add1790bd79c8e3a2">phosphorus.expressions.XUtil.Iterate</a>  (Node node, Node dataSource, Node formattingSource, ApplicationContext context)</dt>
+<dd>the next one is only used in <b>[pf.data.select]</b>, try to rethink logic of this part, somehow  </dd>
+<dt><a class="anchor" id="_todo000018"></a>Member <a class="el" href="classphosphorus_1_1expressions_1_1XUtil.html#ada3449def64c21a01657bb505c0a00d2">phosphorus.expressions.XUtil.SingleImplementation&lt; T &gt;</a>  (SingleDelegate&lt; T &gt; functor, ApplicationContext context, T defaultValue, string inject=null)</dt>
 <dd>try to refactor, too complex  </dd>
 <dt><a class="anchor" id="_todo000017"></a>Member <a class="el" href="classphosphorus_1_1expressions_1_1XUtil.html#adb8d8003f341bffd2ca5ab6cf84071ea">phosphorus.expressions.XUtil.Source</a>  (Node node, Node dataSource, ApplicationContext context)</dt>
 <dd>refactor these next buggers, they're too complex  </dd>
-<dt><a class="anchor" id="_todo000021"></a>Class <a class="el" href="classphosphorus_1_1lambda_1_1events_1_1RemoveOverride.html">phosphorus.lambda.events.RemoveOverride</a>  </dt>
+<dt><a class="anchor" id="_todo000020"></a>Class <a class="el" href="classphosphorus_1_1lambda_1_1events_1_1RemoveOverride.html">phosphorus.lambda.events.RemoveOverride</a>  </dt>
 <dd>refactor to allow for removing multiple overrides at the same time, somehow ...  </dd>
-<dt><a class="anchor" id="_todo000022"></a>Namespace <a class="el" href="namespacephosphorus_1_1lambda_1_1keywords_1_1helpers.html">phosphorus.lambda.keywords.helpers</a>  </dt>
+<dt><a class="anchor" id="_todo000021"></a>Namespace <a class="el" href="namespacephosphorus_1_1lambda_1_1keywords_1_1helpers.html">phosphorus.lambda.keywords.helpers</a>  </dt>
 <dd>Make sure <b>[and]</b> has precedence in Conditions  </dd>
-<dt><a class="anchor" id="_todo000023"></a>Class <a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1Set.html">phosphorus.lambda.keywords.Set</a>  </dt>
+<dt><a class="anchor" id="_todo000022"></a>Class <a class="el" href="classphosphorus_1_1lambda_1_1keywords_1_1Set.html">phosphorus.lambda.keywords.Set</a>  </dt>
 <dd><b>[set]</b> should probably be allowed to create new nodes, think about it ...? </dd>
 </dl>
 </div></div><!-- contents -->

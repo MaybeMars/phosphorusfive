@@ -80,9 +80,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca48fb51795bc580a13eeee7f1627327"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1core_1_1Node.html#aca48fb51795bc580a13eeee7f1627327">Node</a> (string name, object value, IEnumerable&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt; children)</td></tr>
 <tr class="memdesc:aca48fb51795bc580a13eeee7f1627327"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes a new instance of the <a class="el" href="classphosphorus_1_1core_1_1Node.html" title="Arguments passed into and returned from Active Events. ">phosphorus.core.Node</a> class.  <a href="#aca48fb51795bc580a13eeee7f1627327">More...</a><br/></td></tr>
 <tr class="separator:aca48fb51795bc580a13eeee7f1627327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c88d0d044723458c8fdebff7282487"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1core_1_1Node.html#a97c88d0d044723458c8fdebff7282487">CountWhere</a> (Predicate&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt; functor)</td></tr>
+<tr class="memdesc:a97c88d0d044723458c8fdebff7282487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of children nodes matching the given predicate.  <a href="#a97c88d0d044723458c8fdebff7282487">More...</a><br/></td></tr>
+<tr class="separator:a97c88d0d044723458c8fdebff7282487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e23bda39f04dbc4a942bea52f7495e5"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1core_1_1Node.html#a0e23bda39f04dbc4a942bea52f7495e5">Get&lt; T &gt;</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, T defaultValue=default(T))</td></tr>
 <tr class="memdesc:a0e23bda39f04dbc4a942bea52f7495e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of this instance as typeof(T).  <a href="#a0e23bda39f04dbc4a942bea52f7495e5">More...</a><br/></td></tr>
 <tr class="separator:a0e23bda39f04dbc4a942bea52f7495e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36b1f9b0b206918ea768229be5f91a9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1core_1_1Node.html#ac36b1f9b0b206918ea768229be5f91a9">StringEncodeValue</a> (<a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a> context, bool encode)</td></tr>
+<tr class="memdesc:ac36b1f9b0b206918ea768229be5f91a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string value of the value of the node.  <a href="#ac36b1f9b0b206918ea768229be5f91a9">More...</a><br/></td></tr>
+<tr class="separator:ac36b1f9b0b206918ea768229be5f91a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8bad5f09b9bdc68573b3634789acd01"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1core_1_1Node.html#ac8bad5f09b9bdc68573b3634789acd01">UnTieChildren</a> ()</td></tr>
 <tr class="memdesc:ac8bad5f09b9bdc68573b3634789acd01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the children of this instance, while also untying them.  <a href="#ac8bad5f09b9bdc68573b3634789acd01">More...</a><br/></td></tr>
 <tr class="separator:ac8bad5f09b9bdc68573b3634789acd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,7 +195,7 @@ Properties</h2></td></tr>
 <tr class="memdesc:a8ab13998cba39192097e527649030b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the value of the node.  <a href="#a8ab13998cba39192097e527649030b54">More...</a><br/></td></tr>
 <tr class="separator:a8ab13998cba39192097e527649030b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e23f68b30ba9ff20ea1787acdf5041f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1core_1_1Node.html#a5e23f68b30ba9ff20ea1787acdf5041f">Count</a><code> [get]</code></td></tr>
-<tr class="memdesc:a5e23f68b30ba9ff20ea1787acdf5041f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of chilren nodes the node has.  <a href="#a5e23f68b30ba9ff20ea1787acdf5041f">More...</a><br/></td></tr>
+<tr class="memdesc:a5e23f68b30ba9ff20ea1787acdf5041f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of children nodes the node has.  <a href="#a5e23f68b30ba9ff20ea1787acdf5041f">More...</a><br/></td></tr>
 <tr class="separator:a5e23f68b30ba9ff20ea1787acdf5041f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5c5b4857014ea22c37b2ddecf8a3b2"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classphosphorus_1_1core_1_1Node.html#a1a5c5b4857014ea22c37b2ddecf8a3b2">Children</a><code> [get]</code></td></tr>
 <tr class="memdesc:a1a5c5b4857014ea22c37b2ddecf8a3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the children of this instance.  <a href="#a1a5c5b4857014ea22c37b2ddecf8a3b2">More...</a><br/></td></tr>
@@ -732,6 +738,38 @@ Properties</h2></td></tr>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type of object you wish to construct from node iterator.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a97c88d0d044723458c8fdebff7282487"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int phosphorus.core.Node.CountWhere </td>
+          <td>(</td>
+          <td class="paramtype">Predicate&lt; <a class="el" href="classphosphorus_1_1core_1_1Node.html">Node</a> &gt;&#160;</td>
+          <td class="paramname"><em>functor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of children nodes matching the given predicate. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">functor</td><td>Predicate nodes must match to be counted.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1466,6 +1504,51 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac36b1f9b0b206918ea768229be5f91a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string phosphorus.core.Node.StringEncodeValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classphosphorus_1_1core_1_1ApplicationContext.html">ApplicationContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>encode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the string value of the value of the node. </p>
+<p>Will convert the node's value if necessary to an encoded string, and return that string. For a byte<b>[]</b> value, this means base64 encode its value. </p>
+<dl class="section return"><dt>Returns</dt><dd>The string value of the node's value.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Application context.</td></tr>
+    <tr><td class="paramname">encode</td><td>If set to <code>true</code> then string will be base64 encoded if necessary.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a8810525970f94f58d00f6405af0673af"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1565,7 +1648,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the children of this instance. </p>
-<p>Tts children nodes.</p>
+<p>Its children nodes.</p>
 
 </div>
 </div>
@@ -1587,7 +1670,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of chilren nodes the node has. </p>
+<p>Returns the number of children nodes the node has. </p>
 <p>Number of children.</p>
 
 </div>
